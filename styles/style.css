@@ -7,10 +7,12 @@ body{
     background-image: url("../img/fundo2.jpg");
     background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat:repeat;
     padding: 3%;
     margin:0;
     color: rgb(0,0,0);
+    font-size: 16px;
 }
 
 /* Estilos do Header */
@@ -29,13 +31,19 @@ header{
     margin:0;
     font-size: 25px;
 }
+
+/*Estilos aplicados a elementos apenas para o validador de HTML
+*não são apresentados na página*/
 .validador{
     display: none;
 }
 
+
 /*******************************
 *  Estilos do Fundo da página  *
 *******************************/
+
+/*Estilos do Footer*/
 footer{
     background-color: rgb(209, 209, 209);
     padding: 1rem;
@@ -47,18 +55,21 @@ footer{
     font-size: 0;
 }
 
+/*Estilos para o elemento onde é indicado a fonte do material no site*/
 .fontes{
     font-size: 14px;
     padding: 1rem;
     box-sizing: border-box;
 }
 
+/*Estilos do elemento onde indica a informação de quem desenvolveu o site*/
 .info{
     font-size: 14px;
     padding: 1rem;
     box-sizing: border-box;
 }
 
+/*Estilo para o elemento onde é colocado as anotações das tags utilizadas */
 .anotacoes{
     font-size: 12px;
     padding: 1rem;
@@ -71,9 +82,12 @@ footer{
     vertical-align: top;
 }
 
+
 /************************
 *  Estilos do Conteudo  *
 ************************/
+
+/*Estilo para as secções de texto, imagens, videos do site */
 article{
     padding:0;
     margin:0;
@@ -83,6 +97,7 @@ article{
     font-family:Tahoma, sans-serif
 }
 
+/* estilos para o conteúdo principal do site*/
 .conteudo{
     background-color: rgb(209, 209, 209);
     box-sizing: border-box;
@@ -93,10 +108,13 @@ article{
     opacity: 0.95;
     font-size: 0;
 }
+
+
 /************************************
-*   Estilos dos Links               *
+*   Estilos dos Links no texto      *
 ************************************/
 
+/* Estilo padrão das hiperligações que se encontram no texto */
 p a:link,
 p a:visited,
 p a:active{
@@ -104,14 +122,18 @@ p a:active{
     text-decoration:underline;
 }
 
+/* Estilo para as hiperligações quando o rato está por cima */
 p a:hover{
     color: rgb(214, 42, 200);
     text-decoration:underline;
 }
 
+
 /****************************************
 *           Estilos do Menu             *
 ****************************************/
+
+/* Estilo do elemento que contêm o Menu*/
 nav{
     background-color: rgb(0, 77, 179);
     width: 100%;
@@ -125,6 +147,7 @@ nav{
     box-sizing: border-box;
 }
 
+/* Estilo para o Menu */
 nav > ul{
     box-sizing: border-box;
     text-align: center;
@@ -133,6 +156,7 @@ nav > ul{
     padding: 0;
 }
 
+/* Estilo para os elementos do menu */
 nav > ul > li {
     box-sizing: border-box;
     display: inline-block;
@@ -140,6 +164,7 @@ nav > ul > li {
     margin:0;
 }
 
+/* Estilo para os endereços do menu */
 nav > ul > li > a{
     text-decoration: none;
     color: rgb(255,255,255);
@@ -148,22 +173,28 @@ nav > ul > li > a{
     font-size: 22px;
 }
 
+/* Estilo para os elementos do menu com sobreposição do ponteiro do rato */
 nav > ul> li:hover{
     background-color: rgb(226, 243, 245);
     
 }
 
+/* Estilo para os endereços do menu com sobreposição do ponteiro do rato */
 nav > ul> li:hover a{
     color: rgb(0,0,0);
 }
 
+/* Estilo para o elemento do menu que é referente à página atual */ 
 .atual {
     background-color: rgb(69, 146, 175);
 }
 
+
 /****************************************
 *   Estilos dos elementos de texto      *
 ****************************************/
+
+/* Estilo para os titulos das secções de texto */
 .titulo {
     font-size: 16px;
     color: rgb(70, 134, 218);
@@ -173,6 +204,7 @@ nav > ul> li:hover a{
     text-align: left;
 }
 
+/* Estilo para o titulo da secção de anotações */ 
 .anotacao-titulo{
     font-size: 14px;
     color:rgb(0,0,0);
@@ -181,7 +213,7 @@ nav > ul> li:hover a{
     display: block;
 }
 
-/*Estilo para texto que ocupa todo o comprimento do elemento*/
+/*Estilo para elementos que contêm texto que ocupa todo o comprimento do elemento*/
 .texto-total{
     position: relative;
     display: inline-block;
@@ -191,7 +223,7 @@ nav > ul> li:hover a{
     vertical-align:middle;
 }
 
-/*Estilo para texto que ocupa 70% do elemento*/
+/*Estilo para elementos que contêm texto que ocupa 70% do elemento*/
 .texto-70{
     position: relative;
     display: inline-block;
@@ -202,7 +234,7 @@ nav > ul> li:hover a{
     vertical-align:middle;
 }
 
-/*Estilo para Texto que ocupa 50% do elemento */
+/*Estilo para elementos que contêm Texto que ocupa 60% do elemento */
 .texto-60{
     position: relative;
     display: inline-block;
@@ -212,7 +244,7 @@ nav > ul> li:hover a{
     width: 60%;
 }
 
-/*Estilo para Texto que ocupa 50% do elemento */
+/*Estilo para elementos que contêm Texto que ocupa 50% do elemento */
 .texto-50{
     position: relative;
     display: inline-block;
@@ -222,7 +254,7 @@ nav > ul> li:hover a{
     width: 50%;
 }
 
-/*Estilo para texto que ocupa 35% do elemento*/
+/*Estilo para elementos que contêm texto que ocupa 35% do elemento*/
 .texto-35{
     position: relative;
     display: inline-block;
@@ -232,7 +264,8 @@ nav > ul> li:hover a{
     width: 35%;
 }
 
-/*Estilo para texto que ocupa 70% do elemento*/
+/* Estilo para texto */
+.texto-lista,
 .texto-total > p,
 .texto-70 > p,
 .texto-60 > p,
@@ -243,6 +276,12 @@ nav > ul> li:hover a{
     font-family: Verdana;
     color: rgb(0,0,0);
 }
+
+/* Estilo para os elementos da lista que está no conteúdo da página inicial */
+.texto-lista li{
+    margin: 1rem 0;
+}
+
 
 /****************************************
 *   Estilos dos elementos de imagem     *
@@ -261,6 +300,7 @@ nav > ul> li:hover a{
     margin:0;
 }
 
+/*Estilo para elemento de imagem que ocupa todo o comprimento do elemento */
 .imagem-total{
     position:relative;
     display: block;
@@ -272,6 +312,7 @@ nav > ul> li:hover a{
     margin:0 5%;
 }
 
+/*Estilo para elemento de imagem com tamanho de 40%*/
 .imagem-40{
     position:relative;
     display: inline-block;
@@ -284,6 +325,7 @@ nav > ul> li:hover a{
     margin:0;
 }
 
+/*Estilo para elemento de imagem com tamanho de 33%*/
 .imagem-33{
     position:relative;
     display: inline-block;
@@ -296,6 +338,7 @@ nav > ul> li:hover a{
     margin:0;
 }
 
+/*Estilo para elemento de imagem com tamanho de 25%*/
 .imagem-25{
     position:relative;
     display: inline-block;
@@ -308,6 +351,7 @@ nav > ul> li:hover a{
     margin:0;
 }
 
+/*Estilo para as imagem dentro dos elementos de imagens */
 .imagem > img,
 .imagem-total > img,
 .imagem-40 > img,
@@ -317,14 +361,17 @@ nav > ul> li:hover a{
     height: auto;
 }
 
+/* Estilo para colocar margem em alguns elementos das imagens*/
 .img-margem{
     margin: 0 0.5%;
 }
+
 
 /************************************
 *   Estilos de Videos               *
 ************************************/
 
+/* Estilos para o elemento que contêm videos com 40% de comprimento */
 .video-container{
     position: relative;
     display: inline-block;
@@ -335,6 +382,7 @@ nav > ul> li:hover a{
     padding: 1rem;
 }
 
+/* Estilos para o elemento que contêm videos com 50% de comprimento */
 .video-container-50{
     position: relative;
     display:block;
@@ -346,6 +394,7 @@ nav > ul> li:hover a{
     padding: 1rem;
 }
 
+/* Estilos para o elemento que contêm videos com 70% de comprimento */
 .video-container-70{
     position: relative;
     display:block;
@@ -357,6 +406,7 @@ nav > ul> li:hover a{
     padding: 1rem;
 }
 
+/* Estilos para o elementos de vídeo com 25 de altura relativa ao tamanho da fonte do elemento raiz */
 .video-container > iframe ,
 .video-container-50 > iframe{
     width: 100%;
@@ -364,16 +414,19 @@ nav > ul> li:hover a{
     border:0;
 }
 
+/* Estilos para o elementos de vídeo com 45 de altura relativa ao tamanho da fonte do elemento raiz */
 .video-container-70> iframe{
     width: 100%;
     height: 45rem;
     border:0;
 }
 
+
 /****************************************
 *   Estilos da Página Categorias        *
 ****************************************/
 
+/* Estilo para as colunas da página categorias*/
 .coluna{
     position:relative;
     display: inline-block;
@@ -386,46 +439,51 @@ nav > ul> li:hover a{
     font-size: medium;
 }
 
+/* Estilos para a tabela da página */
 .dados {
     border: solid 1px;
     width: 90%;
     margin:0 5%;
 }
 
+/* Estilo para as linhas da tabela*/
 .linha-dados{
     text-align: justify;
     box-sizing: border-box;
 }
 
+/* Estilo para os cabeçalhos da tabela */
 .linha-dados > th{
     text-align: center;
     padding: 1rem;
     border: solid 1px;
 }
 
+/* Estilo para as células da coluna da tabela "Categoria" */
 .celula-dados-C{
     padding: 1rem;
     border: solid 1px;
     width: 25%;
 }
 
+/* Estilo para as células da coluna da tabela "Descrição" */
 .celula-dados-D{
     padding: 1rem;
     border: solid 1px;
     width: 75%;
 }
 
+
 /************************************
 *   Estilos da Página Historia      *
 ************************************/
 
-.texto-total > h1{
-    text-align: center;
-    font-size: 20px;
-}
+/* Estilo para o elemento que contem texto que fica na lateral esquerda de uma imagem na página "história"*/
 .texto-lateral-esq{
     vertical-align: top;
 }
+
+/* Estilo para o elemento que contem texto que fica na lateral direita de uma imagem na página "história"*/
 .texto-lateral-dir{
     vertical-align:bottom;
 }
