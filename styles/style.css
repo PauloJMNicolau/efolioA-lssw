@@ -6,35 +6,135 @@
 body{
     background-image: url("../img/fundo2.jpg");
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 3%;
     margin:0;
+    color: rgb(0,0,0);
 }
 
 /* Estilos do Header */
 header{
     background-color: rgb(209, 209, 209);
+    background-image: url("../img/header.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-sizing: border-box;
+    padding: 8rem 0;
     border-radius: 1rem 1rem 0 0;
     width: 100%;
-    height: 100px;
+    min-width: 1000px;
     opacity: 0.95;
     margin:0;
+    font-size: 25px;
+}
+.validador{
+    display: none;
 }
 
-/* Estilos da barra de navegação */
+/*******************************
+*  Estilos do Fundo da página  *
+*******************************/
+footer{
+    background-color: rgb(209, 209, 209);
+    padding: 1rem;
+    opacity: 0.95;
+    margin:0;
+    min-width: 1000px;
+    border-radius: 0 0 1rem 1rem;
+    text-align: center;
+    font-size: 0;
+}
+
+.fontes{
+    font-size: 14px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.info{
+    font-size: 14px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.anotacoes{
+    font-size: 12px;
+    padding: 1rem;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: left;
+    vertical-align: top;
+}
+
+/************************
+*  Estilos do Conteudo  *
+************************/
+article{
+    padding:0;
+    margin:0;
+    width: 100%;
+    text-align: center;
+    box-sizing:border-box;
+    font-family:Tahoma, sans-serif
+}
+
+.conteudo{
+    background-color: rgb(209, 209, 209);
+    box-sizing: border-box;
+    padding: 2rem;
+    width:100%;
+    min-width: 1000px;
+    margin:0;
+    opacity: 0.95;
+    font-size: 0;
+}
+/************************************
+*   Estilos dos Links               *
+************************************/
+
+p a:link,
+p a:visited,
+p a:active{
+    color: rgb(0,0,0);
+    text-decoration:underline;
+}
+
+p a:hover{
+    color: rgb(214, 42, 200);
+    text-decoration:underline;
+}
+
+/****************************************
+*           Estilos do Menu             *
+****************************************/
 nav{
     background-color: rgb(0, 77, 179);
     width: 100%;
+    min-width: 1000px;
     opacity: 0.95;
     margin:0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-size: 0;
+    box-sizing: border-box;
 }
 
 nav > ul{
+    box-sizing: border-box;
     text-align: center;
     list-style: none;
     margin:0;
+    padding: 0;
 }
 
 nav > ul > li {
+    box-sizing: border-box;
     display: inline-block;
     padding: 1.5rem 2.5rem;
     margin:0;
@@ -45,51 +145,41 @@ nav > ul > li > a{
     color: rgb(255,255,255);
     font-weight: bold;
     margin:0;
+    font-size: 22px;
 }
 
-footer{
-    background-color: rgb(209, 209, 209);
-    padding: 1rem;
-    opacity: 0.95;
-    margin:0;
-    border-radius: 0 0 1rem 1rem;
-    text-align: center;
+nav > ul> li:hover{
+    background-color: rgb(226, 243, 245);
+    
 }
 
-article{
-    padding:0;
-    margin:0;
-    width: 100%;
-    text-align: center;
-    box-sizing:border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+nav > ul> li:hover a{
+    color: rgb(0,0,0);
 }
 
-.conteudo{
-    background-color: rgb(209, 209, 209);
-    box-sizing: border-box;
-    padding: 1rem;
-    width:100%;
-    margin:0;
-    opacity: 0.95;
-    font-size: 0;
-}
-
-.fontes{
-    font-size: 12px;
-    padding: 1rem;
-    box-sizing: border-box;
-}
-
-.info{
-    font-size: 12px;
-    padding: 1rem;
-    box-sizing: border-box;
+.atual {
+    background-color: rgb(69, 146, 175);
 }
 
 /****************************************
 *   Estilos dos elementos de texto      *
 ****************************************/
+.titulo {
+    font-size: 16px;
+    color: rgb(70, 134, 218);
+    font-weight: bolder;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.anotacao-titulo{
+    font-size: 14px;
+    color:rgb(0,0,0);
+    font-weight: bold;
+    width: 100%;
+    display: block;
+}
 
 /*Estilo para texto que ocupa todo o comprimento do elemento*/
 .texto-total{
@@ -98,56 +188,67 @@ article{
     box-sizing: border-box;
     width: 100%;
     margin:0;
-    padding: 1rem;
     vertical-align:middle;
-    text-align: justify;
-    font-size: 14px;
 }
 
-/*Estilo para texto que ocupa 80% do elemento*/
-.texto-80{
+/*Estilo para texto que ocupa 70% do elemento*/
+.texto-70{
     position: relative;
     display: inline-block;
     box-sizing: border-box;
-    width: 80%;
+    width: 70%;
     margin:0;
-    padding: 1rem;
+    
     vertical-align:middle;
-    text-align: justify;
-    font-size: 14px;
 }
 
-/*Estilo para Texto que ocupa 60% do elemento */
+/*Estilo para Texto que ocupa 50% do elemento */
 .texto-60{
     position: relative;
     display: inline-block;
     box-sizing: border-box;
     vertical-align:middle;
-    padding: 1rem;
     margin:0;
     width: 60%;
-    text-align: justify;
-    font-size: 14px;
 }
 
-/*Estilo para texto que ocupa 40% do elemento*/
-.texto-40{
+/*Estilo para Texto que ocupa 50% do elemento */
+.texto-50{
     position: relative;
     display: inline-block;
     box-sizing: border-box;
     vertical-align:middle;
-    padding: 1rem;
     margin:0;
-    width: 40%;
+    width: 50%;
+}
+
+/*Estilo para texto que ocupa 35% do elemento*/
+.texto-35{
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align:middle;
+    margin:0;
+    width: 35%;
+}
+
+/*Estilo para texto que ocupa 70% do elemento*/
+.texto-total > p,
+.texto-70 > p,
+.texto-60 > p,
+.texto-50 > p,
+.texto-35 > p{
     text-align: justify;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: Verdana;
+    color: rgb(0,0,0);
 }
 
 /****************************************
 *   Estilos dos elementos de imagem     *
 ****************************************/
 
-/*Estilo para elemento de imagem com tamanho de 20%*/
+/*Estilo para elemento de imagem com tamanho de 30%*/
 .imagem{
     position:relative;
     display: inline-block;
@@ -155,16 +256,119 @@ article{
     vertical-align:middle;
     opacity:1;
     padding:1rem;
-    width: 20%;
+    width: 30%;
     text-align: center;
     margin:0;
 }
 
-.imagem > img{
+.imagem-total{
+    position:relative;
+    display: block;
+    box-sizing: border-box;
+    opacity:1;
+    padding:1rem;
     width: 90%;
+    text-align: center;
+    margin:0 5%;
+}
+
+.imagem-40{
+    position:relative;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align:middle;
+    opacity:1;
+    padding:1rem;
+    width: 40%;
+    text-align: center;
+    margin:0;
+}
+
+.imagem-33{
+    position:relative;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align:middle;
+    opacity:1;
+    padding:1rem;
+    width: 33%;
+    text-align: center;
+    margin:0;
+}
+
+.imagem-25{
+    position:relative;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align:middle;
+    opacity:1;
+    padding:1rem;
+    width: 25%;
+    text-align: center;
+    margin:0;
+}
+
+.imagem > img,
+.imagem-total > img,
+.imagem-40 > img,
+.imagem-33 > img,
+.imagem-25 > img{
+    width: 80%;
     height: auto;
 }
 
+.img-margem{
+    margin: 0 0.5%;
+}
+
+/************************************
+*   Estilos de Videos               *
+************************************/
+
+.video-container{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 40%;
+    height: auto;
+    padding: 1rem;
+}
+
+.video-container-50{
+    position: relative;
+    display:block;
+    box-sizing: border-box;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    margin: 0 25%;
+    padding: 1rem;
+}
+
+.video-container-70{
+    position: relative;
+    display:block;
+    box-sizing: border-box;
+    text-align: center;
+    width: 70%;
+    height: auto;
+    margin: 0 15%;
+    padding: 1rem;
+}
+
+.video-container > iframe ,
+.video-container-50 > iframe{
+    width: 100%;
+    height: 25rem;
+    border:0;
+}
+
+.video-container-70> iframe{
+    width: 100%;
+    height: 45rem;
+    border:0;
+}
 
 /****************************************
 *   Estilos da Página Categorias        *
@@ -217,7 +421,7 @@ article{
 
 .texto-total > h1{
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
 }
 .texto-lateral-esq{
     vertical-align: top;
@@ -225,4 +429,3 @@ article{
 .texto-lateral-dir{
     vertical-align:bottom;
 }
-
